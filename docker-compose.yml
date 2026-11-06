@@ -1,0 +1,22 @@
+services:
+  knowledge-hub:
+    build: ./task1_knowledge_hub
+    ports:
+      - "8000:8000"
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./task1_knowledge_hub/data:/app/data
+  document-chat:
+    build: ./task2_local_rag
+    ports:
+      - "8001:8001"
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8001
+    environment:
+      OLLAMA_URL: http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./task2_local_rag/data:/app/data

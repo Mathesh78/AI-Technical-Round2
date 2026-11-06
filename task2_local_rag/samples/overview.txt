@@ -1,0 +1,5 @@
+Acme Research is a fictional company used for demonstration only.
+Maya Rao is the fictional Chief Executive Officer of Acme Research. She leads the product strategy and partnership initiatives.
+Jordan Lee is the fictional Chief Technology Officer. Jordan is responsible for research engineering and AI systems.
+The team's current focus is privacy-preserving document search and grounded answers with visible source citations.
+These people and roles are sample data, not claims about a real company.
