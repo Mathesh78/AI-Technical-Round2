@@ -1,7 +1,5 @@
 # Reference-style modular RAG implementation
 
-This edition adapts the **chunking pattern** from the user-provided Banking_Risk_Investigation project, without copying its banking-specific graph, tools, or agents.
-
 ## Structure
 Both projects expose `app/services/chunking.py`, `embeddings.py`, `ingest.py`, and `retriever.py`, plus their existing storage and API modules.
 
